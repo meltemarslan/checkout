@@ -10,4 +10,8 @@ public class ProductService {
     public ProductService(ProductRepository productRepository) {
         this.productRepository = productRepository;
     }
+
+    public void removeItemFromCart(String cartId, String itemId){
+        cartsRepository.removeItemFromCart(cartId, itemId);
+    }
 }
